@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Padocafé — padaria artesanal com pães frescos, doces caseiros e café especial. Venha nos visitar."
+    />
+    <title>Padocafé | Padaria Artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a class="logo logo--header" href="#topo" aria-label="Padocafé — início">
+          <svg
+            class="logo-emblem"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 52 52"
+            width="44"
+            height="44"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <circle cx="26" cy="26" r="24" fill="#FBF6EE" stroke="#B85C38" stroke-width="2" />
+            <path d="M14 30c0-6 5-11 12-11s12 5 12 11v2H14v-2z" fill="#C9A66B" />
+            <path
+              d="M17 28c2-4 6-6 9-6s7 2 9 6"
+              fill="none"
+              stroke="#5C3D2E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M20 22c1.5-2 4-3 6-3s4.5 1 6 3"
+              fill="none"
+              stroke="#5C3D2E"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M22 17c.8-1.2 2.2-2 4-2s3.2.8 4 2"
+              fill="none"
+              stroke="#B85C38"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              opacity=".85"
+            />
+            <ellipse cx="20" cy="32" rx="2" ry="1.2" fill="#5C3D2E" opacity=".35" />
+            <ellipse cx="26" cy="33" rx="2.2" ry="1.3" fill="#5C3D2E" opacity=".35" />
+            <ellipse cx="32" cy="32" rx="2" ry="1.2" fill="#5C3D2E" opacity=".35" />
+          </svg>
+          <span class="logo-brand">Padocafé</span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Abrir menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="menu-principal" class="nav" aria-label="Principal">
+          <ul class="nav-list">
+            <li><a href="#destaques">Destaques</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#visite">Visite-nos</a></li>
+            <li><a href="#contato" class="nav-cta">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-titulo">
+        <div
+          class="hero-bg"
+          role="img"
+          aria-label="Forno de pão artesanal com padeiro ao fundo na Padocafé"
+        ></div>
+        <div class="container hero-content">
+          <p class="hero-eyebrow">Padaria artesanal · Café especial</p>
+          <h1 id="hero-titulo" class="hero-title">
+            O cheiro de pão quente<br />
+            <em>começa aqui</em>
+          </h1>
+          <p class="hero-lead">
+            Na Padocafé, cada fornada é feita com carinho. Pães, doces e um café
+            que convida você a ficar mais um pouquinho.
+          </p>
+          <div class="hero-actions">
+            <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+            <a href="#visite" class="btn btn-secondary">Horário e local</a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="destaques"
+        class="section destaques"
+        aria-labelledby="destaques-titulo"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="destaques-titulo" class="section-title">Destaques</h2>
+            <p class="section-subtitle">
+              Favoritos dos nossos clientes — peça na vitrine ou encomende com antecedência.
+            </p>
+          </header>
+          <ul class="card-grid">
+            <li class="card">
+              <span class="card-icon" aria-hidden="true">🥖</span>
+              <h3 class="card-title">Pão de fermentação natural</h3>
+              <p>Crosta crocante, miolo macio. Disponível de terça a sábado.</p>
+            </li>
+            <li class="card">
+              <span class="card-icon" aria-hidden="true">🥐</span>
+              <h3 class="card-title">Croissant amanteigado</h3>
+              <p>Folhas delicadas, saindo quentinho pela manhã.</p>
+            </li>
+            <li class="card">
+              <span class="card-icon" aria-hidden="true">🍰</span>
+              <h3 class="card-title">Bolo do dia</h3>
+              <p>Sabores que mudam conforme a estação e a inspiração do forneiro.</p>
+            </li>
+            <li class="card">
+              <span class="card-icon" aria-hidden="true">☕</span>
+              <h3 class="card-title">Café coado & espresso</h3>
+              <p>Grãos de produtores parceiros. Leite vegetal sob pedido.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="sobre" class="section sobre" aria-labelledby="sobre-titulo">
+        <div class="container sobre-grid">
+          <div class="sobre-text">
+            <h2 id="sobre-titulo" class="section-title">Nossa história</h2>
+            <p class="text-lead">
+              Somos uma padaria de bairro com alma de café. Receitas de família,
+              fermentação natural e ingredientes selecionados.
+            </p>
+            <p>
+              Abra a porta e encontre vitrines cheias de croissants dourados,
+              pão de fermentação lenta e bolos que lembram domingo na mesa da avó.
+              Um lugar simples, acolhedor e feito para quem ama comer bem.
+            </p>
+          </div>
+          <ul class="sobre-stats" aria-label="Destaques da Padocafé">
+            <li>
+              <div class="stat-visual">
+                <span class="stat-num stat-paes" aria-hidden="true">
+                  <span class="stat-paes-icons"
+                    ><span>🥖</span><span>🍞</span><span>🥐</span><span>🕐</span></span
+                  >
+                  <span class="stat-paes-times"
+                    ><span>8h</span><span>13h</span><span>19h</span><span>00h</span></span
+                  >
+                </span>
+              </div>
+              <span class="stat-label">Pães saindo do forno</span>
+            </li>
+            <li>
+              <div class="stat-visual">
+                <span class="stat-num stat-icons stat-icons-ingredientes"
+                  ><span class="stat-ingredient-caption-wrap"
+                    ><span class="stat-figure" aria-hidden="true">🌾</span
+                    ><span class="stat-ingredient-caption">Farinha</span></span
+                  ><span class="stat-ingredient-caption-wrap"
+                    ><span class="stat-figure" aria-hidden="true">🥚</span
+                    ><span class="stat-ingredient-caption">Ovos</span></span
+                  ><span class="stat-ingredient-caption-wrap"
+                    ><span class="stat-figure" aria-hidden="true">🐮</span
+                    ><span class="stat-ingredient-caption">Leite</span></span
+                  ></span
+                >
+              </div>
+              <span class="stat-label"
+                >Receitas da Fazenda da Vovó Batata — Artezanal, fermentação
+                natural, farinha e leite fresco</span
+              >
+            </li>
+            <li>
+              <div class="stat-visual">
+                <span class="stat-num stat-icons" aria-hidden="true"
+                  ><span>☕</span><span>☕</span></span
+                >
+              </div>
+              <span class="stat-label"
+                >Café da Fazenda, artesanal, nativo, torrado e moído. O famoso
+                achocolatado cacau quente ou frio</span
+              >
+            </li>
+            <li class="stat-card-forno">
+              <div class="stat-visual">
+                <span class="stat-num stat-icons stat-icons-forno" aria-hidden="true"
+                  ><img
+                    class="stat-icon-img"
+                    src="images/forno-tijolo.svg"
+                    alt=""
+                    width="88"
+                    height="88"
+                    decoding="async"
+                /></span>
+              </div>
+              <span class="stat-label"
+                >Pague e retire a hora que quiser — use nosso forno como o forno
+                de casa, bem quentinho</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="cardapio"
+        class="section cardapio"
+        aria-labelledby="cardapio-titulo"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="cardapio-titulo" class="section-title">Cardápio</h2>
+            <p class="section-subtitle">
+              Tudo fresquinho na vitrine — pães, café, cafeteria, salgados, doces e muito mais. Valores sob consulta na loja.
+            </p>
+          </header>
+
+          <div class="cardapio-grid">
+            <article class="cardapio-cat" aria-labelledby="cat-paes">
+              <h3 id="cat-paes" class="cardapio-cat-title">
+                <span class="cardapio-icon" aria-hidden="true">🥖</span>
+                Pães
+              </h3>
+              <ul class="cardapio-lista">
+                <li>Pão francês tradicional</li>
+                <li>Pão de fermentação natural</li>
+                <li>Integral com grãos</li>
+                <li>Brioche e baguete</li>
+                <li>Ciabatta e focaccia</li>
+                <li>Pão de queijo (bandeja)</li>
+              </ul>
+            </article>
+
+            <article class="cardapio-cat" aria-labelledby="cat-cafe">
+              <h3 id="cat-cafe" class="cardapio-cat-title">
+                <span class="cardapio-icon" aria-hidden="true">☕</span>
+                Café
+              </h3>
+              <ul class="cardapio-lista">
+                <li>Espresso e duplo</li>
+                <li>Café coado da casa</li>
+                <li>Cappuccino e latte</li>
+                <li>Mocha e macchiato</li>
+                <li>Café com leite gelado</li>
+                <li>Chás e chocolate quente</li>
+              </ul>
+            </article>
+
+            <article class="cardapio-cat" aria-labelledby="cat-cafeteria">
+              <h3 id="cat-cafeteria" class="cardapio-cat-title">
+                <span class="cardapio-icon" aria-hidden="true">🍽️</span>
+                Cafeteria
+              </h3>
+              <ul class="cardapio-lista">
+                <li>Café da manhã completo</li>
+                <li>Pão na chapa com manteiga</li>
+                <li>Misto quente e misto frio</li>
+                <li>Torrada com requeijão e geleia</li>
+                <li>Combo café + pão de queijo</li>
+                <li>Vitrine do dia — consulte no balcão</li>
+              </ul>
+            </article>
+
+            <article class="cardapio-cat" aria-labelledby="cat-salgados">
+              <h3 id="cat-salgados" class="cardapio-cat-title">
+                <span class="cardapio-icon" aria-hidden="true">🥟</span>
+                Salgados
+              </h3>
+              <ul class="cardapio-lista">
+                <li>Coxinhas e bolinhas de queijo</li>
+                <li>Empadas (frango e palmito)</li>
+                <li>Esfihas abertas e fechadas</li>
+                <li>Pastéis assados e fritos</li>
+                <li>Quiche de legumes e queijo</li>
+                <li>Sanduíches naturais do dia</li>
+              </ul>
+            </article>
+
+            <article class="cardapio-cat" aria-labelledby="cat-bolos">
+              <h3 id="cat-bolos" class="cardapio-cat-title">
+                <span class="cardapio-icon" aria-hidden="true">🍰</span>
+                Bolos
+              </h3>
+              <ul class="cardapio-lista">
+                <li>Bolo de chocolate belga</li>
+                <li>Cenoura com cobertura cremosa</li>
+                <li>Fubá com goiabada</li>
+                <li>Limão siciliano</li>
+                <li>Red velvet (fatia)</li>
+                <li>Bolo do dia — consulte na vitrine</li>
+              </ul>
+            </article>
+
+            <article class="cardapio-cat" aria-labelledby="cat-tortas">
+              <h3 id="cat-tortas" class="cardapio-cat-title">
+                <span class="cardapio-icon" aria-hidden="true">🥧</span>
+                Tortas
+              </h3>
+              <ul class="cardapio-lista">
+                <li>Torta de limão</li>
+                <li>Torta de maçã com canela</li>
+                <li>Banoffee (banana e doce de leite)</li>
+                <li>Torta holandesa</li>
+                <li>Torta salgada de frango</li>
+                <li>Torta de palmito (encomenda)</li>
+              </ul>
+            </article>
+
+            <article class="cardapio-cat" aria-labelledby="cat-sucos">
+              <h3 id="cat-sucos" class="cardapio-cat-title">
+                <span class="cardapio-icon" aria-hidden="true">🧃</span>
+                Sucos
+              </h3>
+              <ul class="cardapio-lista">
+                <li>Suco de laranja natural</li>
+                <li>Abacaxi com hortelã</li>
+                <li>Maracujá e acerola</li>
+                <li>Caju com limão</li>
+                <li>Detox verde (couve e limão)</li>
+                <li>Vitamina de frutas da estação</li>
+              </ul>
+            </article>
+
+            <article class="cardapio-cat" aria-labelledby="cat-doces">
+              <h3 id="cat-doces" class="cardapio-cat-title">
+                <span class="cardapio-icon" aria-hidden="true">🍮</span>
+                Doces
+              </h3>
+              <ul class="cardapio-lista">
+                <li>Brigadeiro e beijinho</li>
+                <li>Pudim de leite condensado</li>
+                <li>Sonho recheado e croissant doce</li>
+                <li>Palha italiana e brownies</li>
+                <li>Trufa e bombom da casa</li>
+                <li>Cookie com gotas de chocolate</li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="cardapio-nota">
+            Cardápio sujeito à disponibilidade do dia. Encomendas de bolos e tortas com 48h de antecedência.
+          </p>
+        </div>
+      </section>
+
+      <section id="visite" class="section visite" aria-labelledby="visite-titulo">
+        <div class="container visite-grid">
+          <div>
+            <h2 id="visite-titulo" class="section-title">Visite-nos</h2>
+            <address class="visite-address">
+              Rua das Padarias, 42 — Centro<br />
+              São Paulo, SP
+            </address>
+            <dl class="horario">
+              <div>
+                <dt>Segunda a sexta</dt>
+                <dd>6h30 – 19h</dd>
+              </div>
+              <div>
+                <dt>Sábado</dt>
+                <dd>7h – 18h</dd>
+              </div>
+              <div>
+                <dt>Domingo</dt>
+                <dd>7h – 13h</dd>
+              </div>
+            </dl>
+          </div>
+          <blockquote class="depoimento">
+            <p>
+              “É o tipo de lugar em que você entra por um pão e sai com o dia mais leve.”
+            </p>
+            <footer>— Cliente da Padocafé</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contato" class="section contato" aria-labelledby="contato-titulo">
+        <div class="container contato-inner">
+          <h2 id="contato-titulo" class="section-title">Fale conosco</h2>
+          <p>Encomendas, sugestões ou só um oi — adoramos ouvir você.</p>
+          <ul class="contato-links">
+            <li>
+              <a href="tel:+5511999999999">(11) 99999-9999</a>
+            </li>
+            <li>
+              <a href="mailto:oi@padocafe.com.br">oi@padocafe.com.br</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5511999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-brand logo logo--footer" href="#topo" aria-label="Padocafé — início">
+          <svg
+            class="logo-emblem"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 52 52"
+            width="40"
+            height="40"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <circle cx="26" cy="26" r="24" fill="#FBF6EE" stroke="#B85C38" stroke-width="2" />
+            <path d="M14 30c0-6 5-11 12-11s12 5 12 11v2H14v-2z" fill="#C9A66B" />
+            <path
+              d="M17 28c2-4 6-6 9-6s7 2 9 6"
+              fill="none"
+              stroke="#5C3D2E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M20 22c1.5-2 4-3 6-3s4.5 1 6 3"
+              fill="none"
+              stroke="#5C3D2E"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M22 17c.8-1.2 2.2-2 4-2s3.2.8 4 2"
+              fill="none"
+              stroke="#B85C38"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              opacity=".85"
+            />
+            <ellipse cx="20" cy="32" rx="2" ry="1.2" fill="#5C3D2E" opacity=".35" />
+            <ellipse cx="26" cy="33" rx="2.2" ry="1.3" fill="#5C3D2E" opacity=".35" />
+            <ellipse cx="32" cy="32" rx="2" ry="1.2" fill="#5C3D2E" opacity=".35" />
+          </svg>
+          <span class="logo-brand">Padocafé</span>
+        </a>
+        <p class="footer-copy">
+          © <span id="ano"></span> Padocafé. Feito com fermentação natural e café.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
