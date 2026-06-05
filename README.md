@@ -7,7 +7,7 @@ Link do projeto online:
 https://padocafe-murex.vercel.app/
 
 📂 ## Repositório:
-https://github.com/usuario/baden-power
+https://github.com//JorgeRamalho/Padocafe
 
 💻 ## Tecnologias
 - Html
@@ -33,4 +33,4 @@ npm run dev
 📄Seu nome: Jorge R. Barbosa
 💼 LinkedIn: https://www.linkedin.com/in/jorge-r-barbosa-aabb0417b/  
 👾 GitHub: https://github.com/JorgeRamalho
-☎️ Contato: 
+☎️ Contato: 41 99143-4153
