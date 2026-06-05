@@ -1,12 +1,15 @@
 
-# PADOCAFÉ
+📌 # PADOCAFÉ
 Sua padaria de verdade
 
-## Website
+🌐 ## Website
 Link do projeto online:
 https://padocafe-murex.vercel.app/
 
-## Tecnologias
+📂 ## Repositório:
+https://github.com/usuario/baden-power
+
+💻 ## Tecnologias
 - Html
 - Css
 - JavaScript
@@ -14,19 +17,20 @@ https://padocafe-murex.vercel.app/
 - Typescript
 - Node.js
 
-## Funcionalidades
+📲 ## Funcionalidades
 - Enconmendas
 - Prêmio
 - Cadastro
 - Produtos
 - Alimentos
 
-## Como executar
+📠  ## Como executar
 git clone ...
 npm install
 npm run dev
 
-## Autor
-Seu nome: Jorge R. Barbosa
-LinkedIn: https://www.linkedin.com/in/jorge-r-barbosa-aabb0417b/  
-GitHub: https://github.com/JorgeRamalho
+💿 ## Autor
+📄Seu nome: Jorge R. Barbosa
+💼 LinkedIn: https://www.linkedin.com/in/jorge-r-barbosa-aabb0417b/  
+👾 GitHub: https://github.com/JorgeRamalho
+☎️ Contato: 
