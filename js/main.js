@@ -24,6 +24,50 @@
     ano.textContent = String(new Date().getFullYear());
   }
 
+  const alertaForm = document.getElementById("alerta-form");
+  if (alertaForm) {
+    const TELEFONE_PADOCA = "5511999999999";
+    const nomeInput = document.getElementById("alerta-nome");
+    const feedback = alertaForm.querySelector(".alerta-feedback");
+    let canalEscolhido = "whatsapp";
+
+    alertaForm.querySelectorAll("button[data-canal]").forEach((botao) => {
+      botao.addEventListener("click", () => {
+        canalEscolhido = botao.dataset.canal;
+      });
+    });
+
+    alertaForm.addEventListener("submit", (evento) => {
+      evento.preventDefault();
+
+      const nome = nomeInput.value.trim();
+      if (!nome) {
+        nomeInput.focus();
+        return;
+      }
+
+      const mensagem =
+        "Olá, Padocafé! Eu sou " +
+        nome +
+        " e quero entrar na lista do ALERTA DE PÃO 🔔🥖 " +
+        "Me avisem quando uma nova fornada estiver saindo do forno!";
+
+      const url =
+        canalEscolhido === "sms"
+          ? "sms:+" + TELEFONE_PADOCA + "?body=" + encodeURIComponent(mensagem)
+          : "https://wa.me/" + TELEFONE_PADOCA + "?text=" + encodeURIComponent(mensagem);
+
+      window.open(url, "_blank", "noopener");
+
+      if (feedback) {
+        feedback.textContent =
+          canalEscolhido === "sms"
+            ? "Abrindo seu app de SMS… é só enviar a mensagem para confirmar! 📱"
+            : "Abrindo o WhatsApp… é só enviar a mensagem para confirmar! 💬";
+      }
+    });
+  }
+
   const header = document.querySelector(".site-header");
   if (header) {
     const scrollThreshold = 32;
