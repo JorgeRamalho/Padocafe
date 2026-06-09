@@ -79,6 +79,7 @@
             <li><a href="#destaques">Destaques</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#alerta-pao">Alerta de Pão</a></li>
             <li><a href="#visite">Visite-nos</a></li>
             <li><a href="#contato" class="nav-cta">Contato</a></li>
           </ul>
@@ -365,6 +366,60 @@
           <p class="cardapio-nota">
             Cardápio sujeito à disponibilidade do dia. Encomendas de bolos e tortas com 48h de antecedência.
           </p>
+        </div>
+      </section>
+
+      <section
+        id="alerta-pao"
+        class="section alerta-pao"
+        aria-labelledby="alerta-pao-titulo"
+      >
+        <div class="container alerta-pao-inner">
+          <header class="section-header">
+            <h2 id="alerta-pao-titulo" class="section-title">
+              <span aria-hidden="true">🔔</span> Alerta de Pão
+            </h2>
+            <p class="section-subtitle">
+              Receba um aviso no seu celular toda vez que uma nova fornada
+              estiver saindo do forno — quentinha, crocante e no ponto.
+            </p>
+          </header>
+
+          <ul class="alerta-fornadas" aria-label="Horários das fornadas">
+            <li><span aria-hidden="true">🥖</span> <strong>8h</strong> — Pães da manhã</li>
+            <li><span aria-hidden="true">🍞</span> <strong>13h</strong> — Fornada do almoço</li>
+            <li><span aria-hidden="true">🥐</span> <strong>19h</strong> — Croissants da tarde</li>
+            <li><span aria-hidden="true">🕐</span> <strong>00h</strong> — Madrugada do forneiro</li>
+          </ul>
+
+          <form class="alerta-form" id="alerta-form">
+            <div class="alerta-campos">
+              <label class="alerta-label" for="alerta-nome">Seu nome</label>
+              <input
+                type="text"
+                id="alerta-nome"
+                name="nome"
+                class="alerta-input"
+                placeholder="Como podemos te chamar?"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <p class="alerta-escolha">Como você quer receber o aviso?</p>
+            <div class="alerta-acoes">
+              <button type="submit" class="btn btn-primary" data-canal="whatsapp">
+                <span aria-hidden="true">💬</span> Quero no WhatsApp
+              </button>
+              <button type="submit" class="btn btn-secondary" data-canal="sms">
+                <span aria-hidden="true">📱</span> Quero por SMS
+              </button>
+            </div>
+            <p class="alerta-feedback" role="status" aria-live="polite"></p>
+            <p class="alerta-nota">
+              Ao se cadastrar, você envia uma mensagem para a nossa equipe e
+              entra na lista do Alerta de Pão. Sem spam — só pão saindo do forno.
+            </p>
+          </form>
         </div>
       </section>
 
