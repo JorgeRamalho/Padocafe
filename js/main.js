@@ -26,7 +26,7 @@
 
   const alertaForm = document.getElementById("alerta-form");
   if (alertaForm) {
-    const TELEFONE_PADOCA = "5511999999999";
+    const TELEFONE_PADOCA = "5541991434153";
     const nomeInput = document.getElementById("alerta-nome");
     const feedback = alertaForm.querySelector(".alerta-feedback");
     let canalEscolhido = "whatsapp";
@@ -78,5 +78,75 @@
 
     updateHeaderOnScroll();
     window.addEventListener("scroll", updateHeaderOnScroll, { passive: true });
+  }
+
+  const heroCarousel = document.querySelector(".hero-carousel");
+  if (heroCarousel) {
+    const slides = Array.from(heroCarousel.querySelectorAll(".hero-slide"));
+    const dots = Array.from(heroCarousel.querySelectorAll("[data-hero-dot]"));
+    const prevBtn = heroCarousel.querySelector("[data-hero-prev]");
+    const nextBtn = heroCarousel.querySelector("[data-hero-next]");
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const autoplayDelay = 6000;
+    let currentIndex = 0;
+    let autoplayTimer = null;
+
+    const goToSlide = (index) => {
+      currentIndex = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, i) => {
+        const isActive = i === currentIndex;
+        slide.classList.toggle("is-active", isActive);
+        slide.setAttribute("aria-hidden", String(!isActive));
+        slide.setAttribute("aria-label", `${i + 1} de ${slides.length}`);
+      });
+
+      dots.forEach((dot, i) => {
+        const isActive = i === currentIndex;
+        dot.classList.toggle("is-active", isActive);
+        dot.setAttribute("aria-selected", String(isActive));
+      });
+    };
+
+    const nextSlide = () => goToSlide(currentIndex + 1);
+    const prevSlide = () => goToSlide(currentIndex - 1);
+
+    const stopAutoplay = () => {
+      if (autoplayTimer) {
+        window.clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    };
+
+    const startAutoplay = () => {
+      stopAutoplay();
+      if (!prefersReducedMotion && slides.length > 1) {
+        autoplayTimer = window.setInterval(nextSlide, autoplayDelay);
+      }
+    };
+
+    prevBtn?.addEventListener("click", () => {
+      prevSlide();
+      startAutoplay();
+    });
+
+    nextBtn?.addEventListener("click", () => {
+      nextSlide();
+      startAutoplay();
+    });
+
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        goToSlide(Number(dot.dataset.heroDot));
+        startAutoplay();
+      });
+    });
+
+    heroCarousel.addEventListener("mouseenter", stopAutoplay);
+    heroCarousel.addEventListener("mouseleave", startAutoplay);
+    heroCarousel.addEventListener("focusin", stopAutoplay);
+    heroCarousel.addEventListener("focusout", startAutoplay);
+
+    startAutoplay();
   }
 })();

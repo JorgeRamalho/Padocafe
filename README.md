@@ -18,19 +18,19 @@ O site apresenta a Padocafé, uma padaria artesanal com pães de fermentação n
 
 | Seção | Descrição |
 | --- | --- |
-| **Hero** | Chamada principal com imagem de destaque do forno a lenha |
+| **Hero Carrossel** | Chamada principal com slides rotativos (forno, vitrine, produtos) |
 | **Destaques** | Cards com os produtos em destaque da casa |
-| **Nossa história** | Apresentação da padaria e seus valores |
 | **Cardápio** | Categorias completas: pães, cafés, cafeteria, salgados, bolos, tortas, sucos e doces |
+| **Nossa história** | Apresentação da padaria e seus valores |
 | **Alerta de Pão 🔔** | Cadastro para receber aviso por WhatsApp ou SMS quando sai uma nova fornada |
-| **Visite-nos** | Endereço, horários e fachada da loja |
+| **Visite-nos** | Endereço em Curitiba — PR, horários e fachada da loja |
 | **Fale conosco** | Telefone, e-mail e WhatsApp |
 
 ## 🛠️ Tecnologias
 
 - **HTML5** semântico (header, nav, main, section, footer)
 - **CSS3** com variáveis customizadas, Flexbox e Grid
-- **JavaScript** vanilla (menu mobile, header com scroll, Alerta de Pão, ano dinâmico no rodapé)
+- **JavaScript** vanilla (menu mobile, header com scroll, carrossel do hero, Alerta de Pão, ano dinâmico no rodapé)
 - **Google Fonts** — Fraunces, Source Sans 3 e Caveat
 - **SVG** inline para logo e ícones
 
@@ -40,6 +40,8 @@ O site apresenta a Padocafé, uma padaria artesanal com pães de fermentação n
 - **Acessibilidade**: skip link, atributos ARIA, navegação por teclado, textos alternativos
 - Menu hambúrguer com estado `aria-expanded`
 - Header com efeito de transição ao rolar a página
+- **Hero Carrossel**: slides com autoplay, controles e enquadramento por imagem
+- **Botão flutuante de WhatsApp** fixo na página
 - **Alerta de Pão**: integração com WhatsApp (`wa.me`) e SMS com mensagem pré-preenchida
 - Favicon em SVG
 

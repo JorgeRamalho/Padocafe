@@ -77,37 +77,215 @@
         <nav id="menu-principal" class="nav" aria-label="Principal">
           <ul class="nav-list">
             <li><a href="#destaques">Destaques</a></li>
-            <li><a href="#sobre">Sobre</a></li>
             <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#sobre">Nossa história</a></li>
             <li><a href="#alerta-pao">Alerta de Pão</a></li>
             <li><a href="#visite">Visite-nos</a></li>
-            <li><a href="#contato" class="nav-cta">Contato</a></li>
+            <li><a href="#contato" class="nav-cta">Fale conosco</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="conteudo">
-      <section class="hero" aria-labelledby="hero-titulo">
-        <div
-          class="hero-bg"
-          role="img"
-          aria-label="Forno de pão artesanal com padeiro ao fundo na Padocafé"
-        ></div>
-        <div class="container hero-content">
-          <p class="hero-eyebrow">Padaria artesanal · Café especial</p>
-          <h1 id="hero-titulo" class="hero-title">
-            O cheiro de pão quente<br />
-            <em>começa aqui</em>
-          </h1>
-          <p class="hero-lead">
-            Na Padocafé, cada fornada é feita com carinho. Pães, doces e um café
-            que convida você a ficar mais um pouquinho.
-          </p>
-          <div class="hero-actions">
-            <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
-            <a href="#visite" class="btn btn-secondary">Horário e local</a>
+      <section
+        class="hero hero-carousel"
+        aria-roledescription="carrossel"
+        aria-label="Destaques da Padocafé"
+      >
+        <div class="hero-slides" id="hero-slides">
+          <article
+            class="hero-slide is-active"
+            aria-roledescription="slide"
+            aria-label="1 de 4"
+            aria-hidden="false"
+            data-slide="0"
+          >
+            <div class="hero-bg">
+              <img
+                class="hero-bg-img hero-bg-img--padeiro"
+                src="images/hero-padeiro-forno.png"
+                alt="Padeiro ao lado do forno com cesto cheio de pães artesanais na Padocafé"
+                width="1920"
+                height="1080"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="container hero-content">
+              <p class="hero-eyebrow">Padaria artesanal · Café especial</p>
+              <h1 class="hero-title">
+                O cheiro de pão quente<br />
+                <em>começa aqui</em>
+              </h1>
+              <p class="hero-lead">
+                Na Padocafé, cada fornada é feita com carinho. Pães, doces e um café
+                que convida você a ficar mais um pouquinho.
+              </p>
+              <div class="hero-actions">
+                <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+                <a href="#visite" class="btn btn-secondary">Horário e local</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero-slide"
+            aria-roledescription="slide"
+            aria-label="2 de 4"
+            aria-hidden="true"
+            data-slide="1"
+          >
+            <div class="hero-bg">
+              <img
+                class="hero-bg-img hero-bg-img--industrial"
+                src="images/hero-forno-industrial.png"
+                alt="Pães saindo do forno industrial, dourados e frescos na Padocafé"
+                width="1920"
+                height="1080"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="container hero-content">
+              <p class="hero-eyebrow">Fermentação natural</p>
+              <h2 class="hero-title">
+                Pães saindo do forno<br />
+                <em>no ponto certo</em>
+              </h2>
+              <p class="hero-lead">
+                Fornadas ao longo do dia — quentinhos, crocantes e prontos
+                para acompanhar o seu café da manhã ou da tarde.
+              </p>
+              <div class="hero-actions">
+                <a href="#destaques" class="btn btn-primary">Ver destaques</a>
+                <a href="#alerta-pao" class="btn btn-secondary">Alerta de Pão</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero-slide"
+            aria-roledescription="slide"
+            aria-label="3 de 4"
+            aria-hidden="true"
+            data-slide="2"
+          >
+            <div class="hero-bg">
+              <img
+                class="hero-bg-img hero-bg-img--pizza"
+                src="images/hero-forno-pizza.png"
+                alt="Pizza assando no forno a lenha na Padocafé"
+                width="1920"
+                height="1080"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="container hero-content">
+              <p class="hero-eyebrow">Forno a lenha</p>
+              <h2 class="hero-title">
+                Sabor que aquece<br />
+                <em>o coração</em>
+              </h2>
+              <p class="hero-lead">
+                Salgados e fornadas especiais saindo quentinhos — o aroma do forno
+                convida você a ficar mais um pouquinho.
+              </p>
+              <div class="hero-actions">
+                <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+                <a href="#visite" class="btn btn-secondary">Visite-nos</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero-slide"
+            aria-roledescription="slide"
+            aria-label="4 de 4"
+            aria-hidden="true"
+            data-slide="3"
+          >
+            <div class="hero-bg">
+              <img
+                class="hero-bg-img hero-bg-img--vitrine"
+                src="images/hero-vitrine-paes.png"
+                alt="Vitrine com variedade de pães artesanais frescos na Padocafé"
+                width="1920"
+                height="1080"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="container hero-content">
+              <p class="hero-eyebrow">Vitrine do dia</p>
+              <h2 class="hero-title">
+                Pães artesanais<br />
+                <em>para escolher</em>
+              </h2>
+              <p class="hero-lead">
+                Baguetes, boules e pães de fermentação natural — tudo fresquinho
+                na vitrine, pronto para levar para casa.
+              </p>
+              <div class="hero-actions">
+                <a href="#destaques" class="btn btn-primary">Ver destaques</a>
+                <a href="#cardapio" class="btn btn-secondary">Cardápio completo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-controls">
+          <button
+            type="button"
+            class="hero-control hero-control--prev"
+            aria-label="Slide anterior"
+            data-hero-prev
+          >
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="hero-dots" role="tablist" aria-label="Slides do carrossel">
+            <button
+              type="button"
+              class="hero-dot is-active"
+              role="tab"
+              aria-selected="true"
+              aria-label="Slide 1"
+              data-hero-dot="0"
+            ></button>
+            <button
+              type="button"
+              class="hero-dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Slide 2"
+              data-hero-dot="1"
+            ></button>
+            <button
+              type="button"
+              class="hero-dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Slide 3"
+              data-hero-dot="2"
+            ></button>
+            <button
+              type="button"
+              class="hero-dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Slide 4"
+              data-hero-dot="3"
+            ></button>
           </div>
+          <button
+            type="button"
+            class="hero-control hero-control--next"
+            aria-label="Próximo slide"
+            data-hero-next
+          >
+            <span aria-hidden="true">›</span>
+          </button>
         </div>
       </section>
 
@@ -143,86 +321,6 @@
               <span class="card-icon" aria-hidden="true">☕</span>
               <h3 class="card-title">Café coado & espresso</h3>
               <p>Grãos de produtores parceiros. Leite vegetal sob pedido.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="sobre" class="section sobre" aria-labelledby="sobre-titulo">
-        <div class="container sobre-grid">
-          <div class="sobre-text">
-            <h2 id="sobre-titulo" class="section-title">Nossa história</h2>
-            <p class="text-lead">
-              Somos uma padaria de bairro com alma de café. Receitas de família,
-              fermentação natural e ingredientes selecionados.
-            </p>
-            <p>
-              Abra a porta e encontre vitrines cheias de croissants dourados,
-              pão de fermentação lenta e bolos que lembram domingo na mesa da avó.
-              Um lugar simples, acolhedor e feito para quem ama comer bem.
-            </p>
-          </div>
-          <ul class="sobre-stats" aria-label="Destaques da Padocafé">
-            <li>
-              <div class="stat-visual">
-                <span class="stat-num stat-paes" aria-hidden="true">
-                  <span class="stat-paes-icons"
-                    ><span>🥖</span><span>🍞</span><span>🥐</span><span>🕐</span></span
-                  >
-                  <span class="stat-paes-times"
-                    ><span>8h</span><span>13h</span><span>19h</span><span>00h</span></span
-                  >
-                </span>
-              </div>
-              <span class="stat-label">Pães saindo do forno</span>
-            </li>
-            <li>
-              <div class="stat-visual">
-                <span class="stat-num stat-icons stat-icons-ingredientes"
-                  ><span class="stat-ingredient-caption-wrap"
-                    ><span class="stat-figure" aria-hidden="true">🌾</span
-                    ><span class="stat-ingredient-caption">Farinha</span></span
-                  ><span class="stat-ingredient-caption-wrap"
-                    ><span class="stat-figure" aria-hidden="true">🥚</span
-                    ><span class="stat-ingredient-caption">Ovos</span></span
-                  ><span class="stat-ingredient-caption-wrap"
-                    ><span class="stat-figure" aria-hidden="true">🐮</span
-                    ><span class="stat-ingredient-caption">Leite</span></span
-                  ></span
-                >
-              </div>
-              <span class="stat-label"
-                >Receitas da Fazenda da Vovó Batata — Artezanal, fermentação
-                natural, farinha e leite fresco</span
-              >
-            </li>
-            <li>
-              <div class="stat-visual">
-                <span class="stat-num stat-icons" aria-hidden="true"
-                  ><span>☕</span><span>☕</span></span
-                >
-              </div>
-              <span class="stat-label"
-                >Café da Fazenda, artesanal, nativo, torrado e moído. O famoso
-                achocolatado cacau quente ou frio</span
-              >
-            </li>
-            <li class="stat-card-forno">
-              <div class="stat-visual">
-                <span class="stat-num stat-icons stat-icons-forno" aria-hidden="true"
-                  ><img
-                    class="stat-icon-img"
-                    src="images/forno-tijolo.svg"
-                    alt=""
-                    width="88"
-                    height="88"
-                    decoding="async"
-                /></span>
-              </div>
-              <span class="stat-label"
-                >Pague e retire a hora que quiser — use nosso forno como o forno
-                de casa, bem quentinho</span
-              >
             </li>
           </ul>
         </div>
@@ -369,6 +467,86 @@
         </div>
       </section>
 
+      <section id="sobre" class="section sobre" aria-labelledby="sobre-titulo">
+        <div class="container sobre-grid">
+          <div class="sobre-text">
+            <h2 id="sobre-titulo" class="section-title">Nossa história</h2>
+            <p class="text-lead">
+              Somos uma padaria de bairro com alma de café. Receitas de família,
+              fermentação natural e ingredientes selecionados.
+            </p>
+            <p>
+              Abra a porta e encontre vitrines cheias de croissants dourados,
+              pão de fermentação lenta e bolos que lembram domingo na mesa da avó.
+              Um lugar simples, acolhedor e feito para quem ama comer bem.
+            </p>
+          </div>
+          <ul class="sobre-stats" aria-label="Destaques da Padocafé">
+            <li>
+              <div class="stat-visual">
+                <span class="stat-num stat-paes" aria-hidden="true">
+                  <span class="stat-paes-icons"
+                    ><span>🥖</span><span>🍞</span><span>🥐</span><span>🕐</span></span
+                  >
+                  <span class="stat-paes-times"
+                    ><span>8h</span><span>13h</span><span>19h</span><span>00h</span></span
+                  >
+                </span>
+              </div>
+              <span class="stat-label">Pães saindo do forno</span>
+            </li>
+            <li>
+              <div class="stat-visual">
+                <span class="stat-num stat-icons stat-icons-ingredientes"
+                  ><span class="stat-ingredient-caption-wrap"
+                    ><span class="stat-figure" aria-hidden="true">🌾</span
+                    ><span class="stat-ingredient-caption">Farinha</span></span
+                  ><span class="stat-ingredient-caption-wrap"
+                    ><span class="stat-figure" aria-hidden="true">🥚</span
+                    ><span class="stat-ingredient-caption">Ovos</span></span
+                  ><span class="stat-ingredient-caption-wrap"
+                    ><span class="stat-figure" aria-hidden="true">🐮</span
+                    ><span class="stat-ingredient-caption">Leite</span></span
+                  ></span
+                >
+              </div>
+              <span class="stat-label"
+                >Receitas da Fazenda da Vovó Batata — Artezanal, fermentação
+                natural, farinha e leite fresco</span
+              >
+            </li>
+            <li>
+              <div class="stat-visual">
+                <span class="stat-num stat-icons" aria-hidden="true"
+                  ><span>☕</span><span>☕</span></span
+                >
+              </div>
+              <span class="stat-label"
+                >Café da Fazenda, artesanal, nativo, torrado e moído. O famoso
+                achocolatado cacau quente ou frio</span
+              >
+            </li>
+            <li class="stat-card-forno">
+              <div class="stat-visual">
+                <span class="stat-num stat-icons stat-icons-forno" aria-hidden="true"
+                  ><img
+                    class="stat-icon-img"
+                    src="images/forno-tijolo.svg"
+                    alt=""
+                    width="88"
+                    height="88"
+                    decoding="async"
+                /></span>
+              </div>
+              <span class="stat-label"
+                >Pague e retire a hora que quiser — use nosso forno como o forno
+                de casa, bem quentinho</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section
         id="alerta-pao"
         class="section alerta-pao"
@@ -429,7 +607,7 @@
             <h2 id="visite-titulo" class="section-title">Visite-nos</h2>
             <address class="visite-address">
               Rua das Padarias, 42 — Centro<br />
-              São Paulo, SP
+              Curitiba — Paraná
             </address>
             <dl class="horario">
               <div>
@@ -461,14 +639,14 @@
           <p>Encomendas, sugestões ou só um oi — adoramos ouvir você.</p>
           <ul class="contato-links">
             <li>
-              <a href="tel:+5511999999999">(11) 99999-9999</a>
+              <a href="tel:+5541991434153">(41) 99143-4153</a>
             </li>
             <li>
               <a href="mailto:oi@padocafe.com.br">oi@padocafe.com.br</a>
             </li>
             <li>
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5541991434153"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -527,6 +705,29 @@
         </p>
       </div>
     </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/5541991434153?text=Ol%C3%A1%2C%20Padocaf%C3%A9!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco pelo WhatsApp"
+    >
+      <svg
+        class="whatsapp-float-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="28"
+        height="28"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          fill="currentColor"
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"
+        />
+      </svg>
+    </a>
 
     <script src="js/main.js"></script>
   </body>
