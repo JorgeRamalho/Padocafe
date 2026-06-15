@@ -88,26 +88,204 @@
     </header>
 
     <main id="conteudo">
-      <section class="hero" aria-labelledby="hero-titulo">
-        <div
-          class="hero-bg"
-          role="img"
-          aria-label="Forno de pão artesanal com padeiro ao fundo na Padocafé"
-        ></div>
-        <div class="container hero-content">
-          <p class="hero-eyebrow">Padaria artesanal · Café especial</p>
-          <h1 id="hero-titulo" class="hero-title">
-            O cheiro de pão quente<br />
-            <em>começa aqui</em>
-          </h1>
-          <p class="hero-lead">
-            Na Padocafé, cada fornada é feita com carinho. Pães, doces e um café
-            que convida você a ficar mais um pouquinho.
-          </p>
-          <div class="hero-actions">
-            <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
-            <a href="#visite" class="btn btn-secondary">Horário e local</a>
+      <section
+        class="hero hero-carousel"
+        aria-roledescription="carrossel"
+        aria-label="Destaques da Padocafé"
+      >
+        <div class="hero-slides" id="hero-slides">
+          <article
+            class="hero-slide is-active"
+            aria-roledescription="slide"
+            aria-label="1 de 4"
+            aria-hidden="false"
+            data-slide="0"
+          >
+            <div class="hero-bg">
+              <img
+                class="hero-bg-img hero-bg-img--padeiro"
+                src="images/hero-padeiro-forno.png"
+                alt="Padeiro ao lado do forno com cesto cheio de pães artesanais na Padocafé"
+                width="1920"
+                height="1080"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="container hero-content">
+              <p class="hero-eyebrow">Padaria artesanal · Café especial</p>
+              <h1 class="hero-title">
+                O cheiro de pão quente<br />
+                <em>começa aqui</em>
+              </h1>
+              <p class="hero-lead">
+                Na Padocafé, cada fornada é feita com carinho. Pães, doces e um café
+                que convida você a ficar mais um pouquinho.
+              </p>
+              <div class="hero-actions">
+                <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+                <a href="#visite" class="btn btn-secondary">Horário e local</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero-slide"
+            aria-roledescription="slide"
+            aria-label="2 de 4"
+            aria-hidden="true"
+            data-slide="1"
+          >
+            <div class="hero-bg">
+              <img
+                class="hero-bg-img hero-bg-img--industrial"
+                src="images/hero-forno-industrial.png"
+                alt="Pães saindo do forno industrial, dourados e frescos na Padocafé"
+                width="1920"
+                height="1080"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="container hero-content">
+              <p class="hero-eyebrow">Fermentação natural</p>
+              <h2 class="hero-title">
+                Pães saindo do forno<br />
+                <em>no ponto certo</em>
+              </h2>
+              <p class="hero-lead">
+                Fornadas ao longo do dia — quentinhos, crocantes e prontos
+                para acompanhar o seu café da manhã ou da tarde.
+              </p>
+              <div class="hero-actions">
+                <a href="#destaques" class="btn btn-primary">Ver destaques</a>
+                <a href="#alerta-pao" class="btn btn-secondary">Alerta de Pão</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero-slide"
+            aria-roledescription="slide"
+            aria-label="3 de 4"
+            aria-hidden="true"
+            data-slide="2"
+          >
+            <div class="hero-bg">
+              <img
+                class="hero-bg-img hero-bg-img--pizza"
+                src="images/hero-forno-pizza.png"
+                alt="Pizza assando no forno a lenha na Padocafé"
+                width="1920"
+                height="1080"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="container hero-content">
+              <p class="hero-eyebrow">Forno a lenha</p>
+              <h2 class="hero-title">
+                Sabor que aquece<br />
+                <em>o coração</em>
+              </h2>
+              <p class="hero-lead">
+                Salgados e fornadas especiais saindo quentinhos — o aroma do forno
+                convida você a ficar mais um pouquinho.
+              </p>
+              <div class="hero-actions">
+                <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+                <a href="#visite" class="btn btn-secondary">Visite-nos</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero-slide"
+            aria-roledescription="slide"
+            aria-label="4 de 4"
+            aria-hidden="true"
+            data-slide="3"
+          >
+            <div class="hero-bg">
+              <img
+                class="hero-bg-img hero-bg-img--vitrine"
+                src="images/hero-vitrine-paes.png"
+                alt="Vitrine com variedade de pães artesanais frescos na Padocafé"
+                width="1920"
+                height="1080"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="container hero-content">
+              <p class="hero-eyebrow">Vitrine do dia</p>
+              <h2 class="hero-title">
+                Pães artesanais<br />
+                <em>para escolher</em>
+              </h2>
+              <p class="hero-lead">
+                Baguetes, boules e pães de fermentação natural — tudo fresquinho
+                na vitrine, pronto para levar para casa.
+              </p>
+              <div class="hero-actions">
+                <a href="#destaques" class="btn btn-primary">Ver destaques</a>
+                <a href="#cardapio" class="btn btn-secondary">Cardápio completo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-controls">
+          <button
+            type="button"
+            class="hero-control hero-control--prev"
+            aria-label="Slide anterior"
+            data-hero-prev
+          >
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="hero-dots" role="tablist" aria-label="Slides do carrossel">
+            <button
+              type="button"
+              class="hero-dot is-active"
+              role="tab"
+              aria-selected="true"
+              aria-label="Slide 1"
+              data-hero-dot="0"
+            ></button>
+            <button
+              type="button"
+              class="hero-dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Slide 2"
+              data-hero-dot="1"
+            ></button>
+            <button
+              type="button"
+              class="hero-dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Slide 3"
+              data-hero-dot="2"
+            ></button>
+            <button
+              type="button"
+              class="hero-dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Slide 4"
+              data-hero-dot="3"
+            ></button>
           </div>
+          <button
+            type="button"
+            class="hero-control hero-control--next"
+            aria-label="Próximo slide"
+            data-hero-next
+          >
+            <span aria-hidden="true">›</span>
+          </button>
         </div>
       </section>
 
@@ -148,7 +326,7 @@
         </div>
       </section>
 
-<section
+      <section
         id="cardapio"
         class="section cardapio"
         aria-labelledby="cardapio-titulo"
