@@ -26,7 +26,7 @@
 
   const alertaForm = document.getElementById("alerta-form");
   if (alertaForm) {
-    const TELEFONE_PADOCA = "5511999999999";
+    const TELEFONE_PADOCA = "5541991434153";
     const nomeInput = document.getElementById("alerta-nome");
     const feedback = alertaForm.querySelector(".alerta-feedback");
     let canalEscolhido = "whatsapp";
