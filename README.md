@@ -76,7 +76,7 @@ python -m http.server 8000
 
 ## 👨‍💻 Autor
 
-**Jorge R. Barbosa**
+**Jorge R. Barbosa** - https://padocafe-murex.vercel.app/
 
 - 💼 LinkedIn: [jorge-r-barbosa](https://www.linkedin.com/in/jorge-r-barbosa-aabb0417b/)
 - 👾 GitHub: [JorgeRamalho](https://github.com/JorgeRamalho)
