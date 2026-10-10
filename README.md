@@ -1,7 +1,7 @@
 
 📌 # Padocafé ☕🍞 - A padaria do seu barirro 
 
-🌐 ## Website Link do projeto online: https:/padocafe-murex.vercel.app/
+🌐 ## Website Link do projeto online: https://padocafe-murex.vercel.app/
 
 📂 ## Repositório: https://github.com//JorgeRamalho/Padocafe
 
